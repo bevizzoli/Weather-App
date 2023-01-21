@@ -2,26 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
-## Development server
+## Dependencies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This app uses the [API of weatherapi.com](https://rapidapi.com/weatherapi/api/weatherapi-com). If you want to use it locally you have to regeister first on [rapidapi.com](https://rapidapi.com/auth/sign-up?referral=/hub).
+After you sign up you have to create a new app [here](https://rapidapi.com/developer/new).
+Now, you can get the neccesery datas to use the API. On the [API's site](https://rapidapi.com/weatherapi/api/weatherapi-com) you can select your app. Now you can get your **X-RapidAPI-Key** and **X-RapidAPI-Host**.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Install
+1. Start your terminal
+2. Navigate to the folder you want to install the application
+3. Run in terminal: `git clone https://github.com/bevizzoli/Weather-App.git`
+3. Run in terminal: `npm i`
+5. Run in terminal: `ng g environments`
+6. Paste the code below to your environment.ts and environment.development.ts files
+```
+export const environment = {
+    API_Endpoint: 'https://weatherapi-com.p.rapidapi.com',
+    XRapidAPIKeyName: 'X-RapidAPI-Key',
+    XRapidAPIKeyValue: 'YOUR API KEY',
+    XRapidAPIHostName: 'X-RapidAPI-Host',
+    XRapidAPIHostValue: 'weatherapi-com.p.rapidapi.com',
+};
+```
+7. Run in terminal: `ng s -o`
+8. Enjoy app
