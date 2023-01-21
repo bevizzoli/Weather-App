@@ -23,7 +23,7 @@
           <span>Feels like</span>
         </div>
         <div class="info-block-value">
-          {{ weatherData.current.feelslike_c }}%
+          {{ weatherData.current.feelslike_c | number: '1.0-0' }}°C
         </div>
       </div>
 
