@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
+This project is launched on my site: [weatherapp.bevizuality.hu](https://www.weatherapp.bevizuality.hu/)
+
 ## Dependencies
 
 This app uses the [API of weatherapi.com](https://rapidapi.com/weatherapi/api/weatherapi-com). If you want to use it locally you have to regeister first on [rapidapi.com](https://rapidapi.com/auth/sign-up?referral=/hub).
